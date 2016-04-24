@@ -1,0 +1,64 @@
+body {
+    padding-top: 50px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+
+.grid {
+    max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+    content: '';
+    /*display: block;*/
+    clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+    width: 160px;
+    height: 160px;
+    float: left;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.grid-thumbnail {
+    width: 156px;
+    height: 156px;
+    overflow: hidden;
+}
+
+.grid-thumbnail-text {
+    width: 156px;
+    border: 2px solid #333;
+    border-bottom-right-radius: 5px;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-bottom-left-radius: 5px;
+    background-color: #fff;
+    color: #1e1e1e;
+}
+
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+.deleteTitle {
+    font-size: 12px;
+    text-align: center;
+}
