@@ -4,7 +4,7 @@
 var TwitterStrategy  = require('passport-twitter').Strategy;
 
 // load up the user model
-var User            = require('../models/user');
+var User            = require('../models/User');
 var configAuth      = require('./auth');
 
 // expose this function to our app using module.exports
