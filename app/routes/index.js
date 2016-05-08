@@ -50,6 +50,9 @@ module.exports = function(app, passport) {
                 throw err;
             }
 
+            console.log('user', user);
+            console.log('req.user', req.user);
+
             res.render('recent', { pins: docs, user: user } );
         });
     });
