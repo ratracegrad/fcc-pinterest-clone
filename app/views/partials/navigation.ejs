@@ -10,11 +10,21 @@
             <span class="navbar-brand">Pinterest Clone</span>
         </div>
         <div id="navbar" class="collapse navbar-collapse pull-right">
+            <% if (user) { %>
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/recent">Recent</a></li>
                 <li><a href="/auth/twitter"><i class="fa fa-twitter" aria-hidden="true"></i>Login with Twitter</a></li>
             </ul>
+            <% } else { %>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/recent">Recent</a></li>
+                <li><a href="/mypins">My Pins</a></li>
+                <li><a href="/add">Add</a></li>
+                <li><a href="/logout"><i class="fa fa-twitter" aria-hidden="true"></i>Logout</a></li>
+            </ul>
+            <% } %>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
