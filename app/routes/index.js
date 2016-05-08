@@ -87,7 +87,7 @@ module.exports = function(app, passport) {
                 throw err;
             }
 
-            res.redirect('/recent');
+            res.redirect('/mypins');
         });
     });
 
