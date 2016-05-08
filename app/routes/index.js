@@ -50,7 +50,7 @@ module.exports = function(app, passport) {
                 throw err;
             }
 
-            res.render('recent', { pins: docs } );
+            res.render('recent', { pins: docs, user: user } );
         });
     });
 
