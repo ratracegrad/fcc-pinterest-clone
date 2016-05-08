@@ -12,11 +12,21 @@
             <h2 class="text-center">Your Pins:</h2>
             <hr>
             <br />
-            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+            <div class="masonry-grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
                 <% pins.forEach(function(item) { %>
-                <div class="grid-item"><img src="<%= item.url %>" /></div>
+                <div class="grid-item">
+                    <img src="<%= item.url %>" class="grid-thumbnail"/>
+                    <div class="grid-thumbnail-text">
+                        <p class="text-center"><%= item.title %></p>
+                        <% if (login) { %>
+                        <p><a href="/api/delete/<%= item._id %>" class="text-center deleteTitle">Delete</a></p>
+                        <% } %>
+                    </div>
+
+                </div>
                 <% }); %>
             </div>
+
         </div>
 
         <% include ./partials/scripts %>
