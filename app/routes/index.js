@@ -18,7 +18,7 @@ module.exports = function(app, passport) {
                 throw err;
             }
 
-            res.render('index', { pins: docs });
+            res.render('index', { pins: docs, user: req.user });
         });
 
     });
@@ -52,7 +52,7 @@ module.exports = function(app, passport) {
 
             console.log('req.user', req.user);
 
-            res.render('recent', { pins: docs, user: user } );
+            res.render('recent', { pins: docs, user: req.user } );
         });
     });
 
@@ -65,7 +65,7 @@ module.exports = function(app, passport) {
                throw err;
            }
 
-           res.render('mypins', { pins: docs });
+           res.render('mypins', { pins: docs, user: req.user });
         });
     });
 
