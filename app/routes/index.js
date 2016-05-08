@@ -73,7 +73,7 @@ module.exports = function(app, passport) {
     // ADD PINS ============================
     // =====================================
     app.get('/add', isLoggedIn, function(req, res, next) {
-        res.render('add');
+        res.render('add', { user: req.user });
     });
 
     app.post('/add', function(req, res, next) {
