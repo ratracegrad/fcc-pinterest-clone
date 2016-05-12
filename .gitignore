@@ -2,3 +2,4 @@
 node_modules
 fcc-pinterest-clone.iml
 .env
+public/vendor

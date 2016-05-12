@@ -1,0 +1,31 @@
+{
+  "name": "fcc-pinterest-clone",
+  "description": "Free Code Camp Pinterest Clone",
+  "main": "server.js",
+  "authors": [
+    "Jennifer Bland <ratracegrad@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "free",
+    "code",
+    "camp",
+    "pinterest",
+    "clone",
+    "jennifer",
+    "bland"
+  ],
+  "homepage": "https://github.com/ratracegrad/fcc-pinterest-clone",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "masonry": "^4.1.0"
+  }
+}
