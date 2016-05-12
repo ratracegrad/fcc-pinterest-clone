@@ -39,7 +39,7 @@ mongoose.connection.on('connected', function() {
 
     require('./app/config/passport')(passport);
 
-    app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
+    app.use(favicon(path.join(__dirname, 'public/images', 'favicon.png')));
     app.use(logger('dev'));
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
