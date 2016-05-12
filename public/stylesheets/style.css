@@ -23,14 +23,11 @@ a {
 /* ---- grid-item ---- */
 
 .grid-item {
-    width: 160px;
-    height: 160px;
     float: left;
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-color: hsla(0, 0%, 0%, 0.5);
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
@@ -38,16 +35,14 @@ a {
     width: 156px;
     height: 156px;
     overflow: hidden;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .grid-thumbnail-text {
-    width: 156px;
-    border: 2px solid #333;
-    border-bottom-right-radius: 5px;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-bottom-left-radius: 5px;
     background-color: #fff;
     color: #1e1e1e;
+    padding-top: 10px;
 }
 
 .grid-item--width2 { width: 320px; }
@@ -60,5 +55,4 @@ a {
 
 .deleteTitle {
     font-size: 12px;
-    text-align: center;
 }
