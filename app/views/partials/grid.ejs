@@ -1,3 +1,5 @@
+<hr>
+<br />
 <div class="masonry-grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
     <% pins.forEach(function(item) { %>
     <div class="grid-item">
@@ -7,10 +9,9 @@
         <div class="grid-thumbnail-text">
             <p class="text-center"><%= item.title %></p>
             <% if (login) { %>
-            <p><a href="/api/delete/<%= item._id %>" class="text-center deleteTitle">Delete</a></p>
+            <p><a href="/api/delete/<%= item._id %>"><span class="text-center deleteTitle">Delete</span></a></p>
             <% } %>
         </div>
-
     </div>
     <% }); %>
 </div>
