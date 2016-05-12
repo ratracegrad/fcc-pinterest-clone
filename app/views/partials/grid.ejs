@@ -1,0 +1,16 @@
+<div class="masonry-grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+    <% pins.forEach(function(item) { %>
+    <div class="grid-item">
+        <div class="img-holder">
+            <img src="<%= item.url %>" class="grid-thumbnail"/>
+        </div>
+        <div class="grid-thumbnail-text">
+            <p class="text-center"><%= item.title %></p>
+            <% if (login) { %>
+            <p><a href="/api/delete/<%= item._id %>" class="text-center deleteTitle">Delete</a></p>
+            <% } %>
+        </div>
+
+    </div>
+    <% }); %>
+</div>
